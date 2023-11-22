@@ -6,6 +6,7 @@ def play():
   playagain = True
   score = 0
   while playagain: 
+<<<<<<< HEAD:main-2.py
   #This is the list of options used in the game.
       input_list = [" 'r' for rock", " 'p' for paper, ", "'s' for scissors"]
     #This is the loop to print the list of options.
@@ -15,6 +16,10 @@ def play():
       user_input = input("Choose your character!\n")
       
     
+=======
+
+      user_input = input("Choose your character! 'r' for rock, 'p' for paper, 's' for scissors\n")
+>>>>>>> 2b4812c37ef340d647ae2dc83d6dfcda0dbfd014:main.py
       computer = random.choice(['r', 'p', 's'])
 
       if user_input == computer: 
@@ -44,3 +49,9 @@ def is_win(player, opponent):
 
 print(play())
 
+<<<<<<< HEAD:main-2.py
+=======
+input_list = ["rock", "paper", "scissors"]
+
+print(input_list[1])
+>>>>>>> 2b4812c37ef340d647ae2dc83d6dfcda0dbfd014:main.py
