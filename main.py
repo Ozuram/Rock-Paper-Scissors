@@ -6,22 +6,22 @@ def play():
   playagain = True
   score = 0
   while playagain: 
-    
+
       user_input = input("Choose your character! 'r' for rock, 'p' for paper, 's' for scissors\n")
       computer = random.choice(['r', 'p', 's'])
-    
+
       if user == computer: 
          print( 'It\'s a tie!? Time for another round!')
-  
+
       # r < p, p < s, s < r
       elif is_win(user, computer):
         print('You won!? Lucky shot, try again!')
         score += 1
-      
+
       else:   
           print('You lost. As expected... Stand up and fight again!')
-    
-      
+
+
       playagain = input("Play again? (y/n)\n") 
       if playagain == 'n':
          print('Thanks for playing!')
